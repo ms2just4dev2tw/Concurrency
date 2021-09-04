@@ -22,7 +22,7 @@
  * 其他线程会进入同步队列，线程状态变为 BLOCKED。<p>
  * 当获取监视器的线程进行释放操作后会唤醒阻塞在同步队列的线程，使它们重新竞争。<p>
  * 
- * <h3>6，Java 的等待/通知机制</h3>
+ * <h3>7，Java 的等待/通知机制</h3>
  * 问题:：生产者消费者的思考 <p>
  * 一个线程修改了线程的值，另一个线程需要感知到了变化，然后进行相应的动作。<p>
  * 在这个过程中存在的矛盾性
@@ -34,13 +34,13 @@
  * </ul>
  * 我们可以通过 Java 内置的{@link org.self.base.thread.WaitNotify 等待/通知机制}解决这个矛盾
  * 
- * <h3>6，线程间的数据传输</h3>
+ * <h3>8，线程间的数据传输</h3>
  * {@link org.self.base.thread.Piped 管道流}
  * 
- * <h3>7，线程的本地变量 ThreadLocal</h3>
- * {@link }
+ * <h3>9，线程的本地变量 ThreadLocal</h3>
+ * {@link org.self.base.thread.Profiler 关于时间的工具}
  * 
- * <h3>8，线程池技术</h3>
+ * <h3>10，线程池技术</h3>
  * {@link org.self.base.thread.ConnectionPool 数据库连接池}
  * {@link org.self.base.thread.DefaultThreadPool 服务器的任务线程池}
  * {@link org.self.base.thread.SimpleHttpServer 一个简单的 Http 服务器}
